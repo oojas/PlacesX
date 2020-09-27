@@ -5,6 +5,10 @@ public class Tree {
    public void insert(int value) {
 	   if(root==null) {
 		   root=new node(value);
+		   
+	   }
+	   else {
+		   root.insert(value);
 	   }
    }
    

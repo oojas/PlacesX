@@ -25,4 +25,25 @@ public class node {
     public node(int value) {
     	this.data=value;
     }
+    public void insert(int value) {
+    	if(value==data) {
+    		return;
+    	}
+    	if(data<value) {
+    		if(left==null) {
+    			left= new node(value);
+    		}
+    		else {
+    			left.insert(value);
+    		}
+    	}
+    	else {
+    		if(right==null) {
+    			right=new  node(value);
+    		}
+    		else {
+    			right.insert(value);
+    		}
+    	}
+    }
 }
