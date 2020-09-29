@@ -11,6 +11,7 @@ public class implementation {
 		trees.insert(20);
 		trees.insert(45);
 		trees.insert(65);
+		trees.insert(340);
 
 	}
 
