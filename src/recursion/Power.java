@@ -9,6 +9,13 @@ public class Power {
     	
     	int m=sc.nextInt();
     	sc.close();
-    	power(n);
+    	int a=power(n,m);
+    	System.out.println("the power is "+ a);
+    }
+    static int power(int n,int m) {
+    	if(m==0) {
+    		return 1;
+    	}
+    	return power(n,m-1)*n;
     }
 }
