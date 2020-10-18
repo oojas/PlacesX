@@ -15,3 +15,7 @@ public class Factorial {
 	  return n*m;
   }
 } 
+// Using Principal of Mathematical Induction 
+// 1. Base Case : 
+// 2. Induction Hypothesis : ASSUME that f(k) is true
+// 3. Induction : Using Step 2 prove that it is true for f(k+1) also.
