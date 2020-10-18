@@ -18,5 +18,6 @@ public class fun {
 	   System.out.println(n);
 	   foo(n-1);
 	   System.out.println(n);
+	   System.out.println();
    }
 }
