@@ -19,3 +19,8 @@ public class Factorial {
 // 1. Base Case : 
 // 2. Induction Hypothesis : ASSUME that f(k) is true
 // 3. Induction : Using Step 2 prove that it is true for f(k+1) also.
+
+// This can be summarized with :
+// 1. Base Case : 
+// 2. Recursive Call :
+// 3. Small Calculation :
