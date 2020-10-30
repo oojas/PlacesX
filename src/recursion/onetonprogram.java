@@ -12,6 +12,9 @@ public class onetonprogram {
 		n=sc.nextInt();
 		sc.close();
 		print(n);
+		int m=1;
+		System.out.println();
+		printtail(n,m);
 
 	}
      
@@ -21,5 +24,12 @@ public class onetonprogram {
 		}
 		print(n-1);
 		System.out.print(n+ " ");
+	}
+	static void printtail(int n,int m) { // this function is a better approach to solve this problem as this is tail recursion
+	 	 if(m>n) {
+	 		 return ;
+	 	 }
+	 	 System.out.print(m + " ");
+	 	 printtail(n,m+1);
 	}
 }
