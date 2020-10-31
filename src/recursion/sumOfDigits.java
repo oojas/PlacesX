@@ -9,6 +9,7 @@ public class sumOfDigits {
    sc.close();
    int sum=0;
         System.out.println("The sum of the digits is " +checksum(n,sum));
+        System.out.println("The sum of the digits using second method is " + checksum(n));
        
 	}
 	static int checksum(int n, int sum) {
@@ -16,6 +17,12 @@ public class sumOfDigits {
 			return sum;
 		}
 		return sum+checksum(n/10,n%10);
+	}
+	static int checksum(int n) {
+		if(n<10) {
+			return n;
+		}
+		return checksum(n/10)+n%10;
 	}
 
 }
