@@ -14,16 +14,21 @@ public class palindrone {
 		   System.out.println("The possibility of the string to be a palindrone is " + val);
 		   sc.close();
 	   }
-	   static boolean check(String s) {
-		   String l=s.substring(0,s.length()/2);
-		   String m=s.substring((s.length()/2)+1,s.length());
-		   System.out.println(l);
-		   System.out.println(m);
-		   
-		   if(l.) {
-			   return true;
-		   }
-		   else 
-			   return false;
-	   }
+	  static boolean check(String s) {
+		  if(s.length()==0) {
+			  return false;
+		  }
+		  if(s.length()==1) {
+			  return true;
+		  }
+		  boolean val=true;
+		  for(int i=0 ,j=s.length()-1; i<s.length()/2 ; i++,j--) {
+			 if(s.charAt(i)!=s.charAt(j)) {
+				 val=false;
+				 break;
+			 }
+			 
+		  }
+		  return val;
+	  }
 }
